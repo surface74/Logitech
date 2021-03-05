@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
-.body {
-  font-family: Roboto;
+body {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
 }
 
@@ -10,35 +10,123 @@
   font-size: 20px;
   line-height: 23px;
   text-align: center;
+  margin-bottom: 0;
   color: #2f3132;
 }
 
+.heading_upcase {
+  text-transform: uppercase;
+}
+
 .text {
-  font-family: Roboto;
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
   color: #2f3132;
+  margin: 0;
 }
 
 .top {
   background: #e0e1e2;
+  padding-top: 25px;
+  padding-bottom: 48px;
 }
 
 .top__header {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 94px;
 }
 
 .top__img {
   height: 230px;
   background: url(/img/MX-Master\ 1.png) no-repeat center;
   background-size: contain;
+  margin-bottom: 67px;
 }
 
 .top__text {
   width: 257px;
   margin: auto;
+  margin-bottom: 40px;
+}
+.top__arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.wireless {
+  background: #ededed;
+  padding-top: 42px;
+  padding-bottom: 18px;
+}
+
+.wireless__header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 27px;
+}
+
+.wireless__text {
+  width: 308px;
+  margin: auto;
+  margin-bottom: 31px;
+}
+.wireless__heading {
+  margin-bottom: 20px;
+}
+.wireless__days {
+  width: 247px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.wireless_days-1,
+.wireless_days-2 {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #c4c4c4;
+}
+
+.wireless__img {
+  display: flex;
+  justify-content: center;
+}
+
+.surface {
+  padding-top: 70px;
+  padding-bottom: 63px;
+}
+
+.surface__heading {
+  margin-bottom: 20px;
+}
+
+.surface__text {
+  width: 247px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.surface__info {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.surface__info-item {
+  border: 1px solid #2f3132;
+  width: 166px;
+  padding: 0.5rem 17px;
+  min-height: 94px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
