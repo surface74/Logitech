@@ -29,7 +29,7 @@ body {
 }
 
 .top {
-  background: #e0e1e2;
+  background-color: #e0e1e2;
   padding-top: 25px;
   padding-bottom: 48px;
 }
@@ -58,12 +58,12 @@ body {
 }
 
 .wireless {
-  background: #ededed;
+  background-color: #ededed;
   padding-top: 42px;
   padding-bottom: 18px;
 }
 
-.wireless__header {
+.wireless__icon {
   display: flex;
   justify-content: center;
   margin-bottom: 27px;
@@ -111,7 +111,7 @@ body {
 .surface__text {
   width: 247px;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .surface__info {
@@ -123,10 +123,142 @@ body {
 
 .surface__info-item {
   border: 1px solid #2f3132;
-  width: 166px;
+  flex-basis: 166px;
   padding: 0.5rem 17px;
   min-height: 94px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.surface__carousel-header {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 27px;
+  margin-bottom: 70px;
+}
+
+.surface__footer {
+  width: 308px;
+  margin: auto;
+}
+
+.flow {
+  background-color: #ededed;
+  padding-top: 70px;
+  padding-bottom: 218px;
+  background-image: url(/img/High_Resolution_JPG-MX\ Lifestyle\ 2346\ 1.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.flow__heading {
+  margin-bottom: 20px;
+}
+
+.flow__text {
+  margin: auto;
+  margin-bottom: 36px;
+  width: 308px;
+}
+
+.flow__list {
+  width: 375px;
+  margin: auto;
+}
+
+.flow__list-ol {
+  margin-bottom: 0;
+  padding-left: 54px;
+}
+
+.flow__list-item {
+  text-align: left;
+  list-style-position: inside;
+  margin-bottom: 16px;
+  width: 224px;
+}
+
+.settings {
+  background-color: #ededed;
+  padding-top: 70px;
+}
+
+.settings__heading {
+  margin-bottom: 20px;
+}
+
+.settings__text {
+  width: 308px;
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+.settings__carousel {
+  margin-bottom: 96px;
+}
+
+.settings__apps {
+  background: #c4c4c4;
+  padding-top: 23px;
+  padding-bottom: 26px;
+}
+
+.settings__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 324px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.settings__footer {
+  width: 308px;
+  margin: auto;
+  color: #fff;
+}
+
+.design {
+  padding-top: 70px;
+}
+
+.design__heading {
+  margin-bottom: 20px;
+}
+
+.design__text {
+  width: 307px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.design__img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 310px;
+}
+
+.design__img_1 {
+  background-image: url(/img/design.jpg);
+  margin-bottom: 70px;
+}
+
+.design__img_2 {
+  background-image: url(/img/speed.jpg);
+}
+
+.copyright {
+  background-color: #2f3132;
+  padding-top: 22px;
+  padding-bottom: 37px;
+  margin: auto;
+}
+
+.copyright__text {
+  font-size: 7px;
+  line-height: 8px;
+  text-align: center;
+  color: #c7c8c8;
+  margin-bottom: 0;
 }
