@@ -5,17 +5,23 @@ body {
   font-style: normal;
 }
 
+.content-center {
+  display: flex;
+  justify-content: center;
+}
+
 .heading {
   font-weight: 900;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
-  margin-bottom: 0;
+  text-transform: uppercase;
+  margin-bottom: 20px;
   color: #2f3132;
 }
 
-.heading_upcase {
-  text-transform: uppercase;
+.surface__info-heading {
+  margin-bottom: 5px;
 }
 
 .text {
@@ -35,26 +41,30 @@ body {
 }
 
 .top__header {
-  display: flex;
-  justify-content: center;
   margin-bottom: 94px;
+}
+
+.top_logo {
+  width: 130px;
 }
 
 .top__img {
   height: 230px;
-  background: url(/img/MX-Master\ 1.png) no-repeat center;
+  background-image: url(/img/MX-Master-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
   margin-bottom: 67px;
 }
 
 .top__text {
-  width: 257px;
-  margin: auto;
-  margin-bottom: 40px;
+  width: 70%;
+  margin: 0 auto 40px;
 }
-.top__arrow {
-  display: flex;
-  justify-content: center;
+
+.top__arrow-down {
+  width: 39px;
+  height: 20px;
 }
 
 .wireless {
@@ -64,24 +74,23 @@ body {
 }
 
 .wireless__icon {
-  display: flex;
-  justify-content: center;
   margin-bottom: 27px;
 }
 
+.wireless_icon-bluetooth {
+  width: 18px;
+  height: 34px;
+}
+
 .wireless__text {
-  width: 308px;
-  margin: auto;
-  margin-bottom: 31px;
+  width: 80%;
+  margin: 0 auto 31px;
 }
-.wireless__heading {
-  margin-bottom: 20px;
-}
+
 .wireless__days {
-  width: 247px;
   display: flex;
-  justify-content: space-between;
-  margin: auto;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .wireless_days-1,
@@ -94,9 +103,12 @@ body {
   color: #c4c4c4;
 }
 
-.wireless__img {
-  display: flex;
-  justify-content: center;
+.wireless__img-mobile {
+  display: block;
+}
+
+.wireless__img-tablet {
+  display: none;
 }
 
 .surface {
@@ -104,20 +116,15 @@ body {
   padding-bottom: 63px;
 }
 
-.surface__heading {
-  margin-bottom: 20px;
-}
-
 .surface__text {
-  width: 247px;
-  margin: auto;
-  margin-bottom: 30px;
+  width: 65%;
+  margin: 0 auto 30px;
 }
 
 .surface__info {
   display: flex;
-  gap: 6px;
   justify-content: center;
+  gap: 6px;
   margin-bottom: 28px;
 }
 
@@ -139,7 +146,7 @@ body {
 }
 
 .surface__footer {
-  width: 308px;
+  width: 80%;
   margin: auto;
 }
 
@@ -152,14 +159,9 @@ body {
   background-position: bottom;
 }
 
-.flow__heading {
-  margin-bottom: 20px;
-}
-
 .flow__text {
-  margin: auto;
-  margin-bottom: 36px;
-  width: 308px;
+  width: 80%;
+  margin: 0 auto 36px;
 }
 
 .flow__list {
@@ -184,14 +186,9 @@ body {
   padding-top: 70px;
 }
 
-.settings__heading {
-  margin-bottom: 20px;
-}
-
 .settings__text {
-  width: 308px;
-  margin: auto;
-  margin-bottom: 35px;
+  width: 80%;
+  margin: 0 auto 35px;
 }
 
 .settings__carousel {
@@ -199,7 +196,7 @@ body {
 }
 
 .settings__apps {
-  background: #c4c4c4;
+  background-color: #c4c4c4;
   padding-top: 23px;
   padding-bottom: 26px;
 }
@@ -208,13 +205,12 @@ body {
   display: flex;
   justify-content: space-between;
   width: 324px;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 .settings__footer {
-  width: 308px;
-  margin: auto;
+  width: 80%;
+  margin: 0 auto;
   color: #fff;
 }
 
@@ -222,14 +218,9 @@ body {
   padding-top: 70px;
 }
 
-.design__heading {
-  margin-bottom: 20px;
-}
-
 .design__text {
-  width: 307px;
-  margin: auto;
-  margin-bottom: 20px;
+  width: 80%;
+  margin: 0 auto 20px;
 }
 
 .design__img {
@@ -261,4 +252,107 @@ body {
   text-align: center;
   color: #c7c8c8;
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .top {
+    padding-top: 54px;
+    padding-bottom: 80px;
+  }
+
+  .top_logo {
+    width: 240px;
+  }
+
+  .top__header {
+    margin-bottom: 160px;
+  }
+
+  .heading {
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 30px;
+  }
+
+  .top__img {
+    height: 514px;
+    background-image: url(/img/MX-Master-1-tablet.png);
+    margin-bottom: 124px;
+  }
+
+  .text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .top__text {
+    margin-bottom: 76px;
+  }
+
+  .top__arrow-down {
+    width: 57px;
+    height: 29px;
+  }
+
+  .wireless {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+
+  .wireless_icon-bluetooth {
+    width: 22px;
+    height: 40px;
+  }
+
+  .wireless__icon {
+    margin-bottom: 39px;
+  }
+
+  .wireless__text {
+    margin-bottom: 76px;
+  }
+
+  .wireless_days-1,
+  .wireless_days-2 {
+    font-size: 150px;
+    line-height: 176px;
+  }
+
+  .wireless__days {
+    gap: 3rem;
+  }
+
+  .wireless__img-mobile {
+    display: none;
+  }
+
+  .wireless__img-tablet {
+    display: block;
+  }
+
+  .surface {
+    padding-bottom: 61px;
+  }
+
+  .surface__info {
+    gap: 32px;
+    margin-bottom: 50px;
+  }
+
+  .surface__info-item {
+    flex-basis: 300px;
+    padding: 0.5rem 24px;
+    min-height: 170px;
+  }
+
+  .surface__info-heading {
+    margin-bottom: 10px;
+  }
+
+  .surface__carousel-header {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 50px;
+    margin-bottom: 85px;
+}
 }
