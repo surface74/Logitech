@@ -16,8 +16,9 @@ body {
   line-height: 23px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 20px;
   color: #2f3132;
+  width: 85%;
+  margin: 0 auto 20px;
 }
 
 .surface__info-heading {
@@ -33,10 +34,59 @@ body {
   color: #2f3132;
   margin: 0;
 }
+/* menu */
+.navbar {
+  padding-top: 25px;
+}
+
+.navbar-light .navbar-toggler {
+  position: absolute;
+  right: 29px;
+  top: 25px;
+  padding: 0;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("/img/menu-burger.svg");
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 16px;
+  background-size: contain;
+}
+
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  justify-content: center;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* menu end */
 
 .top {
   background-color: #e0e1e2;
-  padding-top: 25px;
   padding-bottom: 48px;
 }
 
@@ -70,7 +120,11 @@ body {
 .wireless {
   background-color: #ededed;
   padding-top: 42px;
-  padding-bottom: 18px;
+  padding-bottom: 236px;
+  background-image: url(/img/High_Resolution_PNG-MX\ Master\ 3\ LEFT\ GRAPHITE\ 1.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-position-y: 311px;
 }
 
 .wireless__icon {
@@ -103,11 +157,11 @@ body {
   color: #c4c4c4;
 }
 
-.wireless__img-mobile {
+.device-mobile {
   display: block;
 }
 
-.wireless__img-tablet {
+.device-tablet {
   display: none;
 }
 
@@ -154,7 +208,7 @@ body {
   background-color: #ededed;
   padding-top: 70px;
   padding-bottom: 218px;
-  background-image: url(/img/High_Resolution_JPG-MX\ Lifestyle\ 2346\ 1.png);
+  background-image: url(/img/High_Resolution_JPG-MX_Lifestyle_2346_1.png);
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -165,20 +219,19 @@ body {
 }
 
 .flow__list {
-  width: 375px;
-  margin: auto;
+  width: 100%;
 }
 
 .flow__list-ol {
   margin-bottom: 0;
-  padding-left: 54px;
+  padding-left: 15%;
 }
 
 .flow__list-item {
   text-align: left;
   list-style-position: inside;
   margin-bottom: 16px;
-  width: 224px;
+  width: 80%;
 }
 
 .settings {
@@ -203,8 +256,8 @@ body {
 
 .settings__icons {
   display: flex;
-  justify-content: space-between;
-  width: 324px;
+  justify-content: center;
+  gap: 22px;
   margin: 0 auto 20px;
 }
 
@@ -255,12 +308,30 @@ body {
 }
 
 @media (min-width: 768px) {
-  .top {
+  /* menu */
+  .navbar {
     padding-top: 54px;
+  }
+
+  .navbar-light .navbar-toggler {
+    position: absolute;
+    right: 58px;
+    top: 54px;
+    padding: 0;
+  }
+
+  .navbar-toggler-icon {
+    width: 61px;
+    height: 32px;
+  }
+  /* menu end */
+
+  .top {
+    padding-top: 0;
     padding-bottom: 80px;
   }
 
-  .top_logo {
+  .top__logo {
     width: 240px;
   }
 
@@ -296,7 +367,9 @@ body {
 
   .wireless {
     padding-top: 80px;
-    padding-bottom: 0;
+    padding-bottom: 421px;
+    background-image: url(/img/High_Resolution_PNG-MX\ Master\ 3\ LEFT\ GRAPHITE\ 1-tablet.png);
+    background-position: bottom;
   }
 
   .wireless_icon-bluetooth {
@@ -322,11 +395,11 @@ body {
     gap: 3rem;
   }
 
-  .wireless__img-mobile {
+  .device-mobile {
     display: none;
   }
 
-  .wireless__img-tablet {
+  .device-tablet {
     display: block;
   }
 
@@ -354,5 +427,264 @@ body {
     line-height: 28px;
     margin-top: 50px;
     margin-bottom: 85px;
+  }
+
+  .flow {
+    padding-bottom: 492px;
+    background-image: url(/img/High_Resolution_JPG-MX_Lifestyle_2346_1-tablet.png);
+  }
+
+  .flow__text {
+    margin-bottom: 70px;
+  }
+
+  .flow__list {
+    width: 85%;
+    margin: auto;
+  }
+
+  .flow__list-ol {
+    display: flex;
+    padding-left: 0;
+  }
+
+  .flow__list-item {
+    font-size: 20px;
+    line-height: 23px;
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .flow__list-item:not(:first-child) {
+    border-left: 1px solid #494949;
+    padding-left: 28px;
+  }
+
+  .flow__list-item:not(:last-child) {
+    padding-right: 21px;
+  }
+
+  .settings {
+    padding-bottom: 70px;
+  }
+
+  .settings__text {
+    width: 85%;
+    margin-bottom: 54px;
+  }
+  .settings__carousel {
+    margin-bottom: 148px;
+  }
+  .settings__apps {
+    width: 85%;
+    padding-top: 38px;
+    padding-bottom: 29px;
+    margin: auto;
+  }
+
+  .settings__icons {
+    gap: 35px;
+    margin-bottom: 25px;
+  }
+
+  .settings__footer {
+    width: 82%;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .design__text {
+    margin-bottom: 50px;
+  }
+
+  .design__img {
+    height: 549px;
+  }
+
+  .design__img_1 {
+    background-image: url(/img/design-tablet.jpg);
+  }
+
+  .design__img_2 {
+    background-image: url(/img/speed-tablet.jpg);
+  }
+
+  .copyright {
+    padding-top: 47px;
+    padding-bottom: 71px;
+  }
+
+  .copyright__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
+
+@media (min-width: 1024px) {
+  .text {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .heading {
+    margin-bottom: 35px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  /* menu */
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .show > .nav-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .menu-desktop {
+    margin-left: 147px;
+  }
+
+  .nav-item {
+    padding-left: 21px;
+    padding-right: 21px;
+    border-right: 1px solid #494949;
+  }
+  .nav-item:first-child {
+    padding-left: 0;
+  }
+  .nav-item:last-child {
+    padding-right: 0;
+    border-right: none;
+  }
+  /* menu end */
+
+  .center {
+    padding-left: calc(50% - 580px);
+    padding-right: calc(50% - 580px);
+  }
+
+  .top {
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+
+  .top__header {
+    background: #2f3132;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .top__logo {
+    width: 150px;
+  }
+
+  .top__img {
+    height: 671px;
+    background-image: url(/img/MX-Master-1-desktop.png);
+    margin-bottom: 8px;
+    margin-top: 20px;
+    padding-top: 80px;
+  }
+
+  .top__text {
+    margin-bottom: 49px;
+  }
+
+  .wireless {
+    padding-top: 80px;
+    padding-bottom: 143px;
+    padding-left: calc(50% - 625px);
+    padding-right: calc(50% - 625px);
+    background-image: url(/img/High_Resolution_PNG-MX\ Master\ 3\ FRONT\ LEFT\ GRAPHITE\ 1-desktop.png);
+    background-position-y: 433px;
+  }
+
+  .wireless__icon {
+    margin-bottom: 35px;
+  }
+
+  .wireless__days {
+    gap: 0;
+    padding-left: 80px;
+  }
+
+  .wireless__text {
+    margin-bottom: 14px;
+    width: 60%;
+  }
+
+  .wireless_days-1 {
+    font-size: 300px;
+    line-height: 352px;
+  }
+
+  .wireless_days-2 {
+    font-size: 96px;
+    line-height: 112px;
+    padding-top: 45px;
+  }
+
+  .surface {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: calc(50% - 640px);
+    padding-right: calc(50% - 640px);
+  }
+
+  .surface__text {
+    width: 60%;
+    margin-bottom: 50px;
+  }
+
+  .surface__info-item {
+    flex-basis: 237px;
+    min-height: 140px;
+  }
+  .surface__info-heading {
+    margin-bottom: 0px;
+  }
+
+  .surface__carousel-header {
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 49px;
+    margin-bottom: 90px;
+  }
+
+  .surface__footer {
+    width: 60%;
+    margin: auto;
+  }
+
+  .flow {
+    padding-top: 100px;
+    padding-bottom: 870px;
+    background-image: url(/img/High_Resolution_JPG-MX\ Lifestyle_2346_1-desktop.png);
+    height: 1332px;
+}
+
 }

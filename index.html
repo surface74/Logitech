@@ -15,8 +15,45 @@
 
 <body>
     <section class="top">
-        <div class="top__header content-center">
-            <img class="top_logo" src="/img/Logo_Logitech_dark 1.svg" alt="логотип">
+        <div class="top__header center">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <div>
+                        <picture>
+                            <source srcset="/img/Logo_Logitech-desktop.svg" media="(min-width: 1024px)">
+                            <source srcset="/img/Logo_Logitech-tablet.svg" media="(min-width: 786px)">
+                            <img class="top__logo" src="/img/Logo_Logitech.svg" alt="логотип">
+                        </picture>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse menu-desktop" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">РАБОТАЙТЕ БЕЗ ПРОВОДОВ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ГДЕ УГОДНО</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">С КОМФОРТОМ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">С РАЗНЫХ УСТРОЙСТВ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">В ЛЮБОЕ ВРЕМЯ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">И ЕЩЕ БЫСТРЕЕ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
         </div>
         <div class="top__img">
             <h2 class="heading">РАБОТАЙТЕ ПРОДУКТИВНЕЕ</h2>
@@ -47,10 +84,6 @@
         <div class="wireless__days">
             <div class="wireless_days-1">70</div>
             <div class="wireless_days-2">ДНЕЙ</div>
-        </div>
-        <div class="wireless__img content-center">
-            <img class="wireless__img-mobile" src="/img/High_Resolution_PNG-MX Master 3 LEFT GRAPHITE 1.png" alt="MX Master 3">
-            <img class="wireless__img-tablet" src="/img/High_Resolution_PNG-MX Master 3 LEFT GRAPHITE 1-tablet.png" alt="MX Master 3">
         </div>
     </section>
     <section class="surface">
@@ -85,19 +118,39 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/img/surface_wood.jpg" class="d-block m-auto" alt="дерево">
+                    <picture>
+                        <source srcset="/img/surface_wood-desktop.png" media="(min-width: 1024px)">
+                        <source srcset="/img/surface_wood-tablet.png" media="(min-width: 768px)">
+                        <img class="d-block w-100" src="/img/surface_wood.png" alt="дерево">
+                    </picture>
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/surface_glass.png" class="d-block m-auto" alt="стекло">
+                    <picture>
+                        <source srcset="/img/surface_glass-desktop.png" media="(min-width: 1024px)">
+                        <source srcset="/img/surface_glass-tablet.png" media="(min-width: 768px)">
+                        <img class="d-block w-100" src="/img/surface_glass.png" alt="стекло">
+                    </picture>
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/surface_linoleum.png" class="d-block m-auto" alt="линолиум">
+                    <picture>
+                        <source srcset="/img/surface_linoleum-desktop.png" media="(min-width: 1024px)">
+                        <source srcset="/img/surface_linoleum-tablet.png" media="(min-width: 768px)">
+                        <img class="d-block w-100" src="/img/surface_linoleum.png" alt="линолеум">
+                    </picture>
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/surface_cloth.png" class="d-block m-auto" alt="ткань">
+                    <picture>
+                        <source srcset="/img/surface_cloth-desktop.png" media="(min-width: 1024px)">
+                        <source srcset="/img/surface_cloth-tablet.png" media="(min-width: 768px)">
+                        <img class="d-block w-100" src="/img/surface_cloth.png" alt="ткань">
+                    </picture>
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/surface_marble.png" class="d-block m-auto" alt="мрамор">
+                    <picture>
+                        <source srcset="/img/surface_marble-desktop.png" media="(min-width: 1024px)">
+                        <source srcset="/img/surface_marble-tablet.png" media="(min-width: 768px)">
+                        <img class="d-block w-100" src="/img/surface_marble.png" alt="мрамор">
+                    </picture>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselSurface" data-bs-slide="prev">
@@ -131,7 +184,7 @@
             </ol>
         </div>
     </section>
-    <section class="settings">
+    <section class="settings center">
         <div class="settings__heading heading">С ИНДИВИДУАЛЬНЫМИ НАСТРОЙКАМИ</div>
         <p class="settings__text text">
             Мышь MX Master 3 адаптируется под ваши рабочие процессы. Благодаря индивидуальным
@@ -154,45 +207,81 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/img/function_0.png" class="d-block m-auto" alt="функции">
+                        <picture>
+                            <source srcset="/img/function_0-tablet.png" media="(min-width: 768px)">
+                            <img class="d-block m-auto" src="/img/function_0.png" alt="функция">
+                        </picture>
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/function_1.png" class="d-block m-auto" alt="функции 1">
+                        <picture>
+                            <source srcset="/img/function_1-tablet.png" media="(min-width: 768px)">
+                            <img class="d-block m-auto" src="/img/function_1.png" alt="функция 1">
+                        </picture>
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/function_2.png" class="d-block m-auto" alt="функции 2">
+                        <picture>
+                            <source srcset="/img/function_2-tablet.png" media="(min-width: 768px)">
+                            <img class="d-block m-auto" src="/img/function_2.png" alt="функция 2">
+                        </picture>
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/function_3.png" class="d-block m-auto" alt="функции 3">
+                        <picture>
+                            <source srcset="/img/function_3-tablet.png" media="(min-width: 768px)">
+                            <img class="d-block m-auto" src="/img/function_3.png" alt="функция 3">
+                        </picture>
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/function_4.png" class="d-block m-auto" alt="функции 4">
+                        <picture>
+                            <source srcset="/img/function_4-tablet.png" media="(min-width: 768px)">
+                            <img class="d-block m-auto" src="/img/function_4.png" alt="функция 4">
+                        </picture>
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/function_5.png" class="d-block m-auto" alt="функции 5">
+                        <picture>
+                            <source srcset="/img/function_5-tablet.png" media="(min-width: 768px)">
+                            <img class="d-block m-auto" src="/img/function_5.png" alt="функция 5">
+                        </picture>
                     </div>
                 </div>
             </div>
         </div>
         <div class="settings__apps">
             <div class="settings__icons">
-                <svg width="23" height="23">
+                <svg class="device-mobile" width="23" height="23">
                     <use xlink:href="/img/icons.svg#icon-1"></use>
                 </svg>
-                <svg width="24" height="23">
+                <svg class="device-mobile" width="24" height="23">
                     <use xlink:href="/img/icons.svg#icon-2"></use>
                 </svg>
-                <img src="/img/icon_3.svg" alt="эксплорер">
-                <svg width="26" height="23">
+                <img class="device-mobile" src="/img/icon_3.svg" alt="эксплорер">
+                <svg class="device-mobile" width="26" height="23">
                     <use xlink:href="/img/icons.svg#icon-4"></use>
                 </svg>
-                <svg width="26" height="23">
+                <svg class="device-mobile" width="26" height="23">
                     <use xlink:href="/img/icons.svg#icon-5"></use>
                 </svg>
-                <svg width="25" height="22" alt="">
+                <svg class="device-mobile" width="25" height="22" alt="">
                     <use xlink:href="/img/icons.svg#icon-6"></use>
                 </svg>
-                <img src="/img/icon_7.svg" alt="медиа">
+                <img class="device-mobile" src="/img/icon_7.svg" alt="медиа">
+
+                <svg class="device-tablet" width="36" height="35">
+                    <use xlink:href="/img/icons.svg#icon-1-tablet"></use>
+                </svg>
+                <svg class="device-tablet" width="36" height="35">
+                    <use xlink:href="/img/icons.svg#icon-2-tablet"></use>
+                </svg>
+                <img class="device-tablet" src="/img/icon_3-tablet.svg" alt="эксплорер">
+                <svg class="device-tablet" width="39" height="35">
+                    <use xlink:href="/img/icons.svg#icon-4-tablet"></use>
+                </svg>
+                <svg class="device-tablet" width="40" height="35">
+                    <use xlink:href="/img/icons.svg#icon-5-tablet"></use>
+                </svg>
+                <svg class="device-tablet" width="37" height="33" alt="">
+                    <use xlink:href="/img/icons.svg#icon-6-tablet"></use>
+                </svg>
+                <img class="device-tablet" src="/img/icon_7-tablet.svg" alt="медиа">
             </div>
             <p class="settings__footer text">
                 Начните работать продуктивнее с момента покупки — устройство
@@ -202,7 +291,7 @@
         </div>
 
     </section>
-    <section class="design">
+    <section class="design center">
         <div class="design__heading heading">
             КОМФОРТНО.<br>ЭРГОНОМИЧНО. ИНТУИТИВНО.
         </div>
