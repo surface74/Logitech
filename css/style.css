@@ -685,6 +685,9 @@ body {
     padding-bottom: 870px;
     background-image: url(/img/High_Resolution_JPG-MX\ Lifestyle_2346_1-desktop.png);
     height: 1332px;
-}
-
+  }
+  .flow__text {
+    width: 50%;
+    margin-bottom: 70px;
+  }
 }
