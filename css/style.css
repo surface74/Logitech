@@ -432,6 +432,7 @@ body {
   .flow {
     padding-bottom: 492px;
     background-image: url(/img/High_Resolution_JPG-MX_Lifestyle_2346_1-tablet.png);
+    background-size: contain;
   }
 
   .flow__text {
@@ -580,7 +581,7 @@ body {
   }
   /* menu end */
 
-  .center {
+  .padding-center-1160 {
     padding-left: calc(50% - 580px);
     padding-right: calc(50% - 580px);
   }
