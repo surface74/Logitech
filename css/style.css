@@ -53,7 +53,7 @@ body {
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("/img/menu-burger.svg");
+  background-image: url("../img/menu-burger.svg");
 }
 
 .navbar-toggler-icon {
@@ -100,7 +100,7 @@ body {
 
 .top__img {
   height: 230px;
-  background-image: url(/img/MX-Master-1.png);
+  background-image: url(../img/MX-Master-1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -121,7 +121,7 @@ body {
   background-color: #ededed;
   padding-top: 42px;
   padding-bottom: 236px;
-  background-image: url(/img/High_Resolution_PNG-MX\ Master\ 3\ LEFT\ GRAPHITE\ 1.png);
+  background-image: url(../img/High_Resolution_PNG-MX\ Master\ 3\ LEFT\ GRAPHITE\ 1.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-position-y: 311px;
@@ -208,7 +208,7 @@ body {
   background-color: #ededed;
   padding-top: 70px;
   padding-bottom: 218px;
-  background-image: url(/img/High_Resolution_JPG-MX_Lifestyle_2346_1.png);
+  background-image: url(../img/High_Resolution_JPG-MX_Lifestyle_2346_1.png);
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -284,12 +284,12 @@ body {
 }
 
 .design__img_1 {
-  background-image: url(/img/design.jpg);
+  background-image: url(../img/design.jpg);
   margin-bottom: 70px;
 }
 
 .design__img_2 {
-  background-image: url(/img/speed.jpg);
+  background-image: url(../img/speed.jpg);
 }
 
 .copyright {
@@ -347,7 +347,7 @@ body {
 
   .top__img {
     height: 514px;
-    background-image: url(/img/MX-Master-1-tablet.png);
+    background-image: url(../img/MX-Master-1-tablet.png);
     margin-bottom: 124px;
   }
 
@@ -368,7 +368,7 @@ body {
   .wireless {
     padding-top: 80px;
     padding-bottom: 421px;
-    background-image: url(/img/High_Resolution_PNG-MX\ Master\ 3\ LEFT\ GRAPHITE\ 1-tablet.png);
+    background-image: url(../img/High_Resolution_PNG-MX\ Master\ 3\ LEFT\ GRAPHITE\ 1-tablet.png);
     background-position: bottom;
   }
 
@@ -431,7 +431,7 @@ body {
 
   .flow {
     padding-bottom: 492px;
-    background-image: url(/img/High_Resolution_JPG-MX_Lifestyle_2346_1-tablet.png);
+    background-image: url(../img/High_Resolution_JPG-MX_Lifestyle_2346_1-tablet.png);
     background-size: contain;
   }
 
@@ -503,11 +503,11 @@ body {
   }
 
   .design__img_1 {
-    background-image: url(/img/design-tablet.jpg);
+    background-image: url(../img/design-tablet.jpg);
   }
 
   .design__img_2 {
-    background-image: url(/img/speed-tablet.jpg);
+    background-image: url(../img/speed-tablet.jpg);
   }
 
   .copyright {
@@ -605,7 +605,7 @@ body {
 
   .top__img {
     height: 671px;
-    background-image: url(/img/MX-Master-1-desktop.png);
+    background-image: url(../img/MX-Master-1-desktop.png);
     margin-bottom: 8px;
     margin-top: 20px;
     padding-top: 80px;
@@ -618,7 +618,7 @@ body {
   .wireless {
     padding-top: 80px;
     padding-bottom: 143px;
-    background-image: url(/img/High_Resolution_PNG-MX\ Master\ 3\ FRONT\ LEFT\ GRAPHITE\ 1-desktop.png);
+    background-image: url(../img/High_Resolution_PNG-MX\ Master\ 3\ FRONT\ LEFT\ GRAPHITE\ 1-desktop.png);
     background-position-y: 433px;
   }
 
@@ -682,7 +682,7 @@ body {
   .flow {
     padding-top: 100px;
     padding-bottom: 870px;
-    background-image: url(/img/High_Resolution_JPG-MX\ Lifestyle_2346_1-desktop.png);
+    background-image: url(../img/High_Resolution_JPG-MX\ Lifestyle_2346_1-desktop.png);
     height: 1332px;
   }
   .flow__text {
@@ -699,5 +699,4 @@ body {
     width: 70%;
     margin-bottom: 714px;
   }
-  
 }
