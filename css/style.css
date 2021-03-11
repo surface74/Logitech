@@ -157,14 +157,6 @@ body {
   color: #c4c4c4;
 }
 
-.device-mobile {
-  display: block;
-}
-
-.device-tablet {
-  display: none;
-}
-
 .surface {
   padding-top: 70px;
   padding-bottom: 63px;
@@ -207,10 +199,11 @@ body {
 .flow {
   background-color: #ededed;
   padding-top: 70px;
-  padding-bottom: 218px;
-  background-image: url(../img/High_Resolution_JPG-MX_Lifestyle_2346_1.png);
+  padding-bottom: 55vw;
+  background-image: url(../img/High_Resolution_JPG-MX_Lifestyle_2346_1.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: contain;
 }
 
 .flow__text {
@@ -255,10 +248,13 @@ body {
 }
 
 .settings__icons {
-  display: flex;
-  justify-content: center;
   gap: 22px;
-  margin: 0 auto 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.settings__icons-size {
+  height: 22px;
 }
 
 .settings__footer {
@@ -381,6 +377,10 @@ body {
     margin-bottom: 39px;
   }
 
+  .settings__icons-size {
+    height: 35px;
+  }
+
   .wireless__text {
     margin-bottom: 76px;
   }
@@ -393,14 +393,6 @@ body {
 
   .wireless__days {
     gap: 3rem;
-  }
-
-  .device-mobile {
-    display: none;
-  }
-
-  .device-tablet {
-    display: block;
   }
 
   .surface {
@@ -430,9 +422,8 @@ body {
   }
 
   .flow {
-    padding-bottom: 492px;
-    background-image: url(../img/High_Resolution_JPG-MX_Lifestyle_2346_1-tablet.png);
-    background-size: contain;
+    background-image: url(../img/High_Resolution_JPG-MX_Lifestyle_2346_1-tablet.jpg);
+    padding-bottom: 50vw;
   }
 
   .flow__text {
@@ -681,9 +672,7 @@ body {
 
   .flow {
     padding-top: 100px;
-    padding-bottom: 870px;
-    background-image: url(../img/High_Resolution_JPG-MX\ Lifestyle_2346_1-desktop.png);
-    height: 1332px;
+    background-image: url(../img/High_Resolution_JPG-MX\ Lifestyle_2346_1-desktop.jpg);
   }
   .flow__text {
     width: 80%;
@@ -697,6 +686,16 @@ body {
 
   .settings__text {
     width: 70%;
-    margin-bottom: 714px;
+    margin-bottom: 0;
   }
+  .setting_img {
+    height: 576px;
+    background-image: url(../img/function-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .settings__carousel {
+    display: none;
+}
 }
