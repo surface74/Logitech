@@ -260,7 +260,7 @@ body {
 .settings__footer {
   width: 80%;
   margin: 0 auto;
-  color: #fff;
+  color: white;
 }
 
 .design {
@@ -535,7 +535,7 @@ body {
     font-size: 12px;
     line-height: 14px;
     text-align: center;
-    color: #ffffff;
+    color: white;
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -551,7 +551,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid white;
   }
 
   .menu-desktop {
@@ -572,11 +572,6 @@ body {
   }
   /* menu end */
 
-  .padding-center-1160 {
-    padding-left: calc(50% - 580px);
-    padding-right: calc(50% - 580px);
-  }
-
   .top {
     padding-top: 0;
     padding-bottom: 80px;
@@ -587,6 +582,8 @@ body {
     height: 100px;
     display: flex;
     align-items: center;
+    padding-left: calc(50% - 580px);
+    padding-right: calc(50% - 580px);
     margin-bottom: 20px;
   }
 
@@ -607,10 +604,9 @@ body {
   }
 
   .wireless {
-    padding-top: 80px;
-    padding-bottom: 143px;
     background-image: url(../img/High_Resolution_PNG-MX\ Master\ 3\ FRONT\ LEFT\ GRAPHITE\ 1-desktop.png);
     background-position-y: 433px;
+    padding: 80px calc(50% - 580px) 143px;
   }
 
   .wireless__icon {
@@ -639,10 +635,7 @@ body {
   }
 
   .surface {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: calc(50% - 640px);
-    padding-right: calc(50% - 640px);
+    padding: 100px calc(50% - 640px);
   }
 
   .surface__text {
@@ -671,23 +664,26 @@ body {
   }
 
   .flow {
-    padding-top: 100px;
     background-image: url(../img/High_Resolution_JPG-MX\ Lifestyle_2346_1-desktop.jpg);
+    padding-top: 100px;
+    padding-left: calc(50% - 580px);
+    padding-right: calc(50% - 580px);
   }
+
   .flow__text {
     width: 80%;
     margin-bottom: 70px;
   }
 
   .settings {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px calc(50% - 580px);
   }
 
   .settings__text {
     width: 70%;
     margin-bottom: 0;
   }
+
   .setting_img {
     height: 576px;
     background-image: url(../img/function-desktop.png);
@@ -695,7 +691,69 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
   }
+
   .settings__carousel {
     display: none;
-}
+  }
+
+  .design {
+    padding: 100px calc(50% - 770px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .design-item {
+    width: 655px;
+    height: 557px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .design-item:nth-child(4n-3) {
+    align-items: flex-start;
+    padding-left: 30px;
+  }
+
+  .design-item:nth-child(4n-1) {
+    align-items: flex-end;
+    padding-right: 30px;
+  }
+
+  .design-item .heading {
+    width: 400px;
+    margin: 0;
+  }
+
+  .design-item:nth-child(4n-3) .heading {
+    text-align: left;
+  }
+
+  .design-item:nth-child(4n-1) .heading {
+    text-align: right;
+  }
+
+  .design-item .text {
+    width: 400px;
+    margin: 0;
+  }
+
+  .design-item:nth-child(4n-3) .text {
+    text-align: left;
+  }
+
+  .design-item:nth-child(4n-1) .text {
+    text-align: right;
+  }
+
+  .design__img_1 {
+    background-image: url(../img/design-desktop.jpg);
+    margin-bottom: 0;
+    order: -1;
+  }
+
+  .design__img_2 {
+    background-image: url(../img/speed-desktop.jpg);
+  }
 }
