@@ -15,63 +15,65 @@
 </head>
 
 <body>
-    <section class="top">
-        <div class="top__header">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <div>
-                        <picture>
-                            <source srcset="img/Logo_Logitech-desktop.svg" media="(min-width: 1024px)">
-                            <source srcset="img/Logo_Logitech-tablet.svg" media="(min-width: 786px)">
-                            <img class="top__logo" src="img/Logo_Logitech.svg" alt="логотип">
-                        </picture>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse menu-desktop" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">РАБОТАЙТЕ БЕЗ ПРОВОДОВ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">ГДЕ УГОДНО</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">С КОМФОРТОМ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">С РАЗНЫХ УСТРОЙСТВ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">В ЛЮБОЕ ВРЕМЯ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">И ЕЩЕ БЫСТРЕЕ</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+    <header class="menu">
 
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="menu__logo navbar-brand">
+                    <picture>
+                        <source srcset="img/Logo_Logitech-desktop.svg" media="(min-width: 992px)">
+                        <source srcset="img/Logo_Logitech-tablet.svg" media="(min-width: 768px)">
+                        <img class="top__logo" src="img/Logo_Logitech.svg" alt="Логотип Logitech">
+                    </picture>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Меню сайта">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu-desktop" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#wireless">РАБОТАЙТЕ БЕЗ ПРОВОДОВ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#surface">ГДЕ УГОДНО</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#flow">С КОМФОРТОМ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#settings">С РАЗНЫХ УСТРОЙСТВ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#settings">НАСТРОЙКИ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#design">И ЕЩЕ БЫСТРЕЕ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <section class="top">
+
         <div class="top__img">
             <h2 class="heading">РАБОТАЙТЕ ПРОДУКТИВНЕЕ</h2>
         </div>
         <p class="top__text text">
             Создана для эффективной работы,
             программирования и творчества</p>
-        <div class="top__arrow flex-center">
+        <div class="top__arrow">
             <a href="#wireless">
-                <img class="top__arrow-down" src="img/arrow-down.svg" alt="вниз">
+                <img class="top__arrow-down" src="img/arrow-down.svg" alt="Перейти вниз">
             </a>
 
         </div>
     </section>
     <section class="wireless" id="wireless">
-        <div class="wireless__icon flex-center">
-            <img class="wireless_icon-bluetooth" src="img/icon-bluetooth.svg" alt="вниз">
+        <div class="wireless__icon">
+            <img class="wireless_icon-bluetooth" src="img/icon-bluetooth.svg" alt="Иконка bluetooth">
         </div>
         <div class="wireless__heading">
             <h2 class="heading">БЕЗ ПРОВОДОВ</h2>
@@ -83,7 +85,7 @@
             <div class="wireless_days-2">ДНЕЙ</div>
         </div>
     </section>
-    <section class="surface">
+    <section class="surface" id="surface">
         <div class="surface__heading">
             <h2 class="heading">ЗА ЛЮБЫМ СТОЛОМ</h2>
         </div>
@@ -103,50 +105,50 @@
         <div id="carouselSurface" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselSurface" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Дерево"></button>
+                    aria-current="true" aria-label="Включить вид на деревянной поверхности"></button>
                 <button type="button" data-bs-target="#carouselSurface" data-bs-slide-to="1"
-                    aria-label="Стекло"></button>
+                    aria-label="Включить вид на стеклянной поверхности"></button>
                 <button type="button" data-bs-target="#carouselSurface" data-bs-slide-to="2"
-                    aria-label="Линолиум"></button>
+                    aria-label="Включить вид на линолиуме"></button>
                 <button type="button" data-bs-target="#carouselSurface" data-bs-slide-to="3"
-                    aria-label="Ткань"></button>
+                    aria-label="Включить вид на ткани"></button>
                 <button type="button" data-bs-target="#carouselSurface" data-bs-slide-to="4"
-                    aria-label="Мрамор"></button>
+                    aria-label="Включить вид на мраморе"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <picture>
                         <source srcset="img/surface_wood-desktop.jpg" media="(min-width: 1024px)">
                         <source srcset="img/surface_wood-tablet.jpg" media="(min-width: 768px)">
-                        <img class="d-block w-100" src="img/surface_wood.jpg" alt="дерево">
+                        <img class="d-block w-100" src="img/surface_wood.jpg" alt="Вид на деревянной поверхности">
                     </picture>
                 </div>
                 <div class="carousel-item">
                     <picture>
                         <source srcset="img/surface_glass-desktop.jpg" media="(min-width: 1024px)">
                         <source srcset="img/surface_glass-tablet.jpg" media="(min-width: 768px)">
-                        <img class="d-block w-100" src="img/surface_glass.jpg" alt="стекло">
+                        <img class="d-block w-100" src="img/surface_glass.jpg" alt="Вид на стеклянной поверхности">
                     </picture>
                 </div>
                 <div class="carousel-item">
                     <picture>
                         <source srcset="img/surface_linoleum-desktop.jpg" media="(min-width: 1024px)">
                         <source srcset="img/surface_linoleum-tablet.jpg" media="(min-width: 768px)">
-                        <img class="d-block w-100" src="img/surface_linoleum.jpg" alt="линолеум">
+                        <img class="d-block w-100" src="img/surface_linoleum.jpg" alt="Вид на линолиуме">
                     </picture>
                 </div>
                 <div class="carousel-item">
                     <picture>
                         <source srcset="img/surface_cloth-desktop.jpg" media="(min-width: 1024px)">
                         <source srcset="img/surface_cloth-tablet.jpg" media="(min-width: 768px)">
-                        <img class="d-block w-100" src="img/surface_cloth.jpg" alt="ткань">
+                        <img class="d-block w-100" src="img/surface_cloth.jpg" alt="Вид на ткани">
                     </picture>
                 </div>
                 <div class="carousel-item">
                     <picture>
                         <source srcset="img/surface_marble-desktop.jpg" media="(min-width: 1024px)">
                         <source srcset="img/surface_marble-tablet.jpg" media="(min-width: 768px)">
-                        <img class="d-block w-100" src="img/surface_marble.jpg" alt="мрамор">
+                        <img class="d-block w-100" src="img/surface_marble.jpg" alt="Вид на мраморе">
                     </picture>
                 </div>
             </div>
@@ -163,7 +165,7 @@
         <p class="surface__footer text">Благодаря технологии Logitecch Darkfierd,
             MX Master 3 работает на любой поверхности, даже на стекле. </p>
     </section>
-    <section class="flow">
+    <section class="flow" id="flow">
         <div class="flow__heading heading">ОДНОВРЕМЕННО С НЕСКОЛЬКИХ УСТРОЙСТВ</div>
         <p class="flow__text text">
             С технологией Flow вы сможете работать одновременно на нескольких компьютерах, мгновенно
@@ -181,7 +183,7 @@
             </ol>
         </div>
     </section>
-    <section class="settings">
+    <section class="settings" id="settings">
         <div class="settings__heading heading">С ИНДИВИДУАЛЬНЫМИ НАСТРОЙКАМИ</div>
         <p class="settings__text text">
             Мышь MX Master 3 адаптируется под ваши рабочие процессы. Благодаря индивидуальным
@@ -191,66 +193,68 @@
             <div id="carouselFunction" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselFunction" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Функции"></button>
+                        aria-current="true" aria-label="Включить описание основных функций"></button>
                     <button type="button" data-bs-target="#carouselFunction" data-bs-slide-to="1"
-                        aria-label="Функции 1"></button>
+                        aria-label="Включить описание функций колесика для большого пальца"></button>
                     <button type="button" data-bs-target="#carouselFunction" data-bs-slide-to="2"
-                        aria-label="Функции 2"></button>
+                        aria-label="Включить описание функции колесика прокрутки"></button>
                     <button type="button" data-bs-target="#carouselFunction" data-bs-slide-to="3"
-                        aria-label="Функции 3"></button>
+                        aria-label="Включить описание функций кнопок вперед-назад"></button>
                     <button type="button" data-bs-target="#carouselFunction" data-bs-slide-to="4"
-                        aria-label="Функции 4"></button>
+                        aria-label="Включить описание функции кнопки жестов"></button>
                     <button type="button" data-bs-target="#carouselFunction" data-bs-slide-to="5"
-                        aria-label="Функции 5"></button>
+                        aria-label="Включить описание функции кнопки переключения режимов"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <picture>
                             <source srcset="img/nothing.png" media="(min-width: 1024px)">
                             <source srcset="img/function_0-tablet.png" media="(min-width: 768px)">
-                            <img class="d-block m-auto" src="img/function_0.png" alt="функция">
+                            <img class="d-block m-auto" src="img/function_0.png" alt="Основные функции">
                         </picture>
                     </div>
                     <div class="carousel-item">
                         <picture>
                             <source srcset="img/nothing.png" media="(min-width: 1024px)">
                             <source srcset="img/function_1-tablet.png" media="(min-width: 768px)">
-                            <img class="d-block m-auto" src="img/function_1.png" alt="функция 1">
+                            <img class="d-block m-auto" src="img/function_1.png"
+                                alt="Функции колесика для большого пальца">
                         </picture>
                     </div>
                     <div class="carousel-item">
                         <picture>
                             <source srcset="img/nothing.png" media="(min-width: 1024px)">
                             <source srcset="img/function_2-tablet.png" media="(min-width: 768px)">
-                            <img class="d-block m-auto" src="img/function_2.png" alt="функция 2">
+                            <img class="d-block m-auto" src="img/function_2.png" alt="Функции колесика прокрутки">
                         </picture>
                     </div>
                     <div class="carousel-item">
                         <picture>
                             <source srcset="img/nothing.png" media="(min-width: 1024px)">
                             <source srcset="img/function_3-tablet.png" media="(min-width: 768px)">
-                            <img class="d-block m-auto" src="img/function_3.png" alt="функция 3">
+                            <img class="d-block m-auto" src="img/function_3.png" alt="Функции кнопок вперед-назад">
                         </picture>
                     </div>
                     <div class="carousel-item">
                         <picture>
                             <source srcset="img/nothing.png" media="(min-width: 1024px)">
                             <source srcset="img/function_4-tablet.png" media="(min-width: 768px)">
-                            <img class="d-block m-auto" src="img/function_4.png" alt="функция 4">
+                            <img class="d-block m-auto" src="img/function_4.png" alt="Функция кнопки жестов">
                         </picture>
                     </div>
                     <div class="carousel-item">
                         <picture>
                             <source srcset="img/nothing.png" media="(min-width: 1024px)">
                             <source srcset="img/function_5-tablet.png" media="(min-width: 768px)">
-                            <img class="d-block m-auto" src="img/function_5.png" alt="функция 5">
+                            <img class="d-block m-auto" src="img/function_5.png"
+                                alt="Функция кнопки переключения режимов">
                         </picture>
                     </div>
                 </div>
             </div>
         </div>
         <div class="settings__apps">
-            <div class="settings__icons flex-center">
+            <div class="settings__icons">
                 <img class="settings__icons-size" src="img/icon_1.svg" alt="Photoshop">
                 <img class="settings__icons-size" src="img/icon_2.svg" alt="Premier">
                 <picture>
@@ -273,31 +277,31 @@
         </div>
 
     </section>
-    <section class="design">
-        <div class="design-item">
-            <div class="design__heading heading">
-                КОМФОРТНО.<br>ЭРГОНОМИЧНО. ИНТУИТИВНО.
-            </div>
-            <p class="design__text text">
-                Дизайн мыши MX Master 3 разработан так, чтобы с точностью повторять форму вашей ладони. Но не менее
-                важны
-                колесико прокрутки для большого пальца
-                и расположение кнопок жестов, с которыми вы будете творить уверенно как никогда.
-            </p>
+    <section class="design" id="design">
+    <div class="design-item" id="">
+        <div class="design__heading heading">
+            КОМФОРТНО.<br>ЭРГОНОМИЧНО. ИНТУИТИВНО.
         </div>
-        <div class="design__img design__img_1 design-item">
+        <p class="design__text text">
+            Дизайн мыши MX Master 3 разработан так, чтобы с точностью повторять форму вашей ладони. Но не менее
+            важны
+            колесико прокрутки для большого пальца
+            и расположение кнопок жестов, с которыми вы будете творить уверенно как никогда.
+        </p>
+    </div>
+    <div class="design__img design__img_1 design-item">
+    </div>
+    <div class="design-item">
+        <div class="design__heading heading">
+            БЫСТРЕЕ,<br>ЧЕМ КОГДА-ЛИБО
         </div>
-        <div class="design-item">
-            <div class="design__heading heading">
-                БЫСТРЕЕ,<br>ЧЕМ КОГДА-ЛИБО
-            </div>
-            <p class="design__text text">
-                Компьютерная мышь MX Master 3 предлагает ультимативный механизм прокрутки
-                со скоростью 1000 строк за 1 секунду. С точностью до пикселя. Бесшумно.
-            </p>
-        </div>
-        <div class="design__img design__img_2 design-item">
-        </div>
+        <p class="design__text text">
+            Компьютерная мышь MX Master 3 предлагает ультимативный механизм прокрутки
+            со скоростью 1000 строк за 1 секунду. С точностью до пикселя. Бесшумно.
+        </p>
+    </div>
+    <div class="design__img design__img_2 design-item">
+    </div>
 
     </section>
     <footer class="copyright">
