@@ -174,19 +174,46 @@ body {
   margin-bottom: 5px;
 }
 
+/* #carouselSurface .carousel-control-next,
+#carouselSurface .carousel-control-prev {
+  top: auto;
+  bottom: -90px;
+  width: 9px;
+  height: 18px;
+  z-index: 2;
+} */
+
+/* #carouselSurface .carousel-control-next {
+  margin-right: calc(50% - 170px);
+}
+
+#carouselSurface .carousel-control-prev {
+  margin-left: calc(50% - 170px);
+}
+
+#carouselSurface .carousel-control-next-icon {
+  background-image: url("../img/arrow-right.svg");
+}
+
+#carouselSurface .carousel-control-prev-icon {
+  background-image: url("../img/arrow-left.svg");
+} */
+
 #carouselSurface .carousel-indicators {
   bottom: -90px;
-  margin-bottom: 0;
+  margin: 0;
+  gap: 20px;
 }
 
 #carouselSurface .carousel-indicators [data-bs-target] {
   width: 31px;
   height: 31px;
   background: no-repeat center;
-  margin: 0 10px;
+  margin: 0;
   border: 0;
   opacity: 0.8;
-  /* box-sizing: border-box; */
+  border-radius: 50%;
+  background-size: contain;
 }
 
 #carouselSurface .carousel-indicators .active,
@@ -195,7 +222,7 @@ body {
 }
 
 #carouselSurface .carousel-indicators [data-bs-slide-to="0"] {
-  background-image: url(../img/switch_wood.png);
+  background-image: url(../img/wood-texture.png);
 }
 #carouselSurface .carousel-indicators [data-bs-slide-to="1"] {
   background-image: url(../img/switch_glass.png);
@@ -432,6 +459,17 @@ body {
     line-height: 28px;
     margin-top: 50px;
     margin-bottom: 85px;
+  }
+
+  #carouselSurface .carousel-indicators {
+    bottom: -140px;
+    margin: 0;
+    gap: 30px;
+  }
+
+  #carouselSurface .carousel-indicators [data-bs-target] {
+    width: 50px;
+    height: 50px;
   }
 
   .flow {
