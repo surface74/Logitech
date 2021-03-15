@@ -16,10 +16,6 @@ body {
   margin: 0 auto 20px;
 }
 
-.surface__info-heading {
-  margin-bottom: 5px;
-}
-
 .text {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
@@ -174,6 +170,46 @@ body {
   justify-content: center;
 }
 
+.surface__info-heading {
+  margin-bottom: 5px;
+}
+
+#carouselSurface .carousel-indicators {
+  bottom: -90px;
+  margin-bottom: 0;
+}
+
+#carouselSurface .carousel-indicators [data-bs-target] {
+  width: 31px;
+  height: 31px;
+  background: no-repeat center;
+  margin: 0 10px;
+  border: 0;
+  opacity: 0.8;
+  /* box-sizing: border-box; */
+}
+
+#carouselSurface .carousel-indicators .active,
+#carouselSurface .carousel-indicators [data-bs-target]:hover {
+  opacity: 1;
+}
+
+#carouselSurface .carousel-indicators [data-bs-slide-to="0"] {
+  background-image: url(../img/switch_wood.png);
+}
+#carouselSurface .carousel-indicators [data-bs-slide-to="1"] {
+  background-image: url(../img/switch_glass.png);
+}
+#carouselSurface .carousel-indicators [data-bs-slide-to="2"] {
+  background-image: url(../img/switch_linoleum.png);
+}
+#carouselSurface .carousel-indicators [data-bs-slide-to="3"] {
+  background-image: url(../img/switch_cloth.png);
+}
+#carouselSurface .carousel-indicators [data-bs-slide-to="4"] {
+  background-image: url(../img/switch_marble.png);
+}
+
 .surface__carousel-header {
   font-size: 14px;
   line-height: 16px;
@@ -310,10 +346,6 @@ body {
 
   .top__logo {
     width: 240px;
-  }
-
-  .menu {
-    /* padding-bottom: 160px; */
   }
 
   .heading {
@@ -654,8 +686,6 @@ body {
   .settings__carousel {
     display: none;
   }
-
-
 }
 @media (min-width: 1280px) {
   .wireless {
