@@ -174,21 +174,20 @@ body {
   margin-bottom: 5px;
 }
 
-/* #carouselSurface .carousel-control-next,
+#carouselSurface .carousel-control-next,
 #carouselSurface .carousel-control-prev {
   top: auto;
   bottom: -90px;
-  width: 9px;
-  height: 18px;
+  width: 12px;
   z-index: 2;
-} */
+}
 
-/* #carouselSurface .carousel-control-next {
-  margin-right: calc(50% - 170px);
+#carouselSurface .carousel-control-next {
+  margin-right: calc(50% - 150px);
 }
 
 #carouselSurface .carousel-control-prev {
-  margin-left: calc(50% - 170px);
+  margin-left: calc(50% - 150px);
 }
 
 #carouselSurface .carousel-control-next-icon {
@@ -197,7 +196,7 @@ body {
 
 #carouselSurface .carousel-control-prev-icon {
   background-image: url("../img/arrow-left.svg");
-} */
+}
 
 #carouselSurface .carousel-indicators {
   bottom: -90px;
@@ -222,7 +221,7 @@ body {
 }
 
 #carouselSurface .carousel-indicators [data-bs-slide-to="0"] {
-  background-image: url(../img/wood-texture.png);
+  background-image: url(../img/switch_wood.png);
 }
 #carouselSurface .carousel-indicators [data-bs-slide-to="1"] {
   background-image: url(../img/switch_glass.png);
@@ -292,6 +291,27 @@ body {
 
 .settings__carousel {
   margin-bottom: 96px;
+}
+
+#carouselFunction .carousel-indicators {
+  bottom: -21px;
+  margin: 0;
+  gap: 15px;
+}
+
+#carouselFunction .carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  background: #2f3132;
+  margin: 0;
+  border: 0;
+  opacity: 0.21;
+  border-radius: 50%;
+}
+
+#carouselFunction .carousel-indicators .active,
+#carouselFunction .carousel-indicators [data-bs-target]:hover {
+  opacity: 1;
 }
 
 .settings__apps {
@@ -472,6 +492,20 @@ body {
     height: 50px;
   }
 
+  #carouselSurface .carousel-control-next,
+  #carouselSurface .carousel-control-prev {
+    bottom: -131px;
+    width: 50px;
+  }
+
+  #carouselSurface .carousel-control-next {
+    margin-right: calc(50% - 260px);
+  }
+
+  #carouselSurface .carousel-control-prev {
+    margin-left: calc(50% - 260px);
+  }
+
   .flow {
     background-image: url(../img/High_Resolution_JPG-MX_Lifestyle_2346_1-tablet.jpg);
     padding-bottom: 50vw;
@@ -515,9 +549,22 @@ body {
     width: 85%;
     margin-bottom: 54px;
   }
+
   .settings__carousel {
     margin-bottom: 148px;
   }
+
+  #carouselFunction .carousel-indicators {
+    bottom: -53px;
+    margin: 0;
+    gap: 25px;
+  }
+
+  #carouselFunction .carousel-indicators [data-bs-target] {
+    width: 25px;
+    height: 25px;
+  }
+
   .settings__apps {
     width: 85%;
     padding-top: 38px;
@@ -734,12 +781,12 @@ body {
 
   .wireless__days {
     gap: 0;
-    padding-left: 80px;
   }
 
   .wireless_days-1 {
     font-size: 300px;
     line-height: 352px;
+    padding-left: 80px;
   }
 
   .wireless_days-2 {
