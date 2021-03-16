@@ -104,11 +104,11 @@ body {
 .wireless {
   background-color: #ededed;
   padding-top: 42px;
-  padding-bottom: 236px;
-  background-image: url(../img/High_Resolution_PNG-MX\ Master\ 3\ LEFT\ GRAPHITE\ 1.png);
+  /* padding-bottom: 236px; */
+  /* background-image: url(../img/High_Resolution_PNG-MX\ Master\ 3\ LEFT\ GRAPHITE\ 1.png);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-position-y: 311px;
+  background-position-y: 311px; */
 }
 
 .wireless__icon {
@@ -131,6 +131,11 @@ body {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  padding-bottom: 236px;
+  background-image: url(../img/High_Resolution_PNG-MX\ Master\ 3\ LEFT\ GRAPHITE\ 1.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-position-y: 70px;
 }
 
 .wireless_days-1,
@@ -423,7 +428,7 @@ body {
 
   .wireless {
     padding-top: 80px;
-    padding-bottom: 421px;
+    /* padding-bottom: 421px; */
     background-image: url(../img/High_Resolution_PNG-MX\ Master\ 3\ LEFT\ GRAPHITE\ 1-tablet.png);
     background-position: bottom;
   }
@@ -453,6 +458,7 @@ body {
 
   .wireless__days {
     gap: 3rem;
+    padding-bottom: 421px;
   }
 
   .surface {
@@ -776,11 +782,12 @@ body {
   .wireless {
     background-image: url(../img/High_Resolution_PNG-MX\ Master\ 3\ FRONT\ LEFT\ GRAPHITE\ 1-desktop.png);
     background-position-y: 433px;
-    padding: 80px calc(50% - 580px) 143px;
+    padding: 80px calc(50% - 580px) 0;
   }
 
   .wireless__days {
     gap: 0;
+    padding-bottom: 143px;
   }
 
   .wireless_days-1 {
