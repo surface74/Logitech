@@ -104,11 +104,6 @@ body {
 .wireless {
   background-color: #ededed;
   padding-top: 42px;
-  /* padding-bottom: 236px; */
-  /* background-image: url(../img/High_Resolution_PNG-MX\ Master\ 3\ LEFT\ GRAPHITE\ 1.png);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-position-y: 311px; */
 }
 
 .wireless__icon {
@@ -428,9 +423,6 @@ body {
 
   .wireless {
     padding-top: 80px;
-    /* padding-bottom: 421px; */
-    background-image: url(../img/High_Resolution_PNG-MX\ Master\ 3\ LEFT\ GRAPHITE\ 1-tablet.png);
-    background-position: bottom;
   }
 
   .wireless_icon-bluetooth {
@@ -459,6 +451,8 @@ body {
   .wireless__days {
     gap: 3rem;
     padding-bottom: 421px;
+    background-image: url(../img/High_Resolution_PNG-MX\ Master\ 3\ LEFT\ GRAPHITE\ 1-tablet.png);
+    background-position: bottom;
   }
 
   .surface {
@@ -780,13 +774,13 @@ body {
 }
 @media (min-width: 1280px) {
   .wireless {
-    background-image: url(../img/High_Resolution_PNG-MX\ Master\ 3\ FRONT\ LEFT\ GRAPHITE\ 1-desktop.png);
-    background-position-y: 433px;
     padding: 80px calc(50% - 580px) 0;
   }
 
   .wireless__days {
     gap: 0;
+    background-image: url(../img/High_Resolution_PNG-MX\ Master\ 3\ FRONT\ LEFT\ GRAPHITE\ 1-desktop.png);
+    background-position-y: 120px;
     padding-bottom: 143px;
   }
 
@@ -803,7 +797,7 @@ body {
   }
 
   .design {
-    padding: 100px calc(50% - 645px);
+    padding: 100px calc(50% - 640px);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -814,6 +808,8 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 50%;
+    max-height: 546px;
+    overflow-y: auto;
   }
 
   .design-item:nth-child(4n-3) {
