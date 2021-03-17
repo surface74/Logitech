@@ -37,14 +37,13 @@ body {
   padding: 0;
 }
 
-.navbar > .container,
-.navbar > .container-fluid,
-.navbar > .container-lg,
-.navbar > .container-md,
-.navbar > .container-sm,
-.navbar > .container-xl,
-.navbar > .container-xxl {
+.navbar > .container-fluid {
   justify-content: center;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .navbar-toggler {
@@ -52,6 +51,7 @@ body {
   right: 25px;
   top: 0;
   padding: 0;
+  z-index: 1;
 }
 
 .navbar-toggler,
@@ -60,11 +60,35 @@ body {
   border: none;
 }
 
-.navbar-light .navbar-toggler-icon {
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  background-image: url("../img/menu_close.svg");
+  background-size: contain;
+  width: 43px;
+  height: 43px;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
   background-image: url("../img/menu-burger.svg");
+  background-size: contain;
   width: 30px;
   height: 16px;
-  background-size: contain;
+}
+
+.navbar-collapse {
+  display: flex;
+  flex-grow: 0;
+  justify-content: center;
+}
+
+.navbar-collapse.show {
+  width: 100%;
+  position: absolute;
+  top: -25px;
+  padding-top: 100px;
+}
+
+.navbar-collapse.collapse.show .nav-item {
+  margin: auto;
 }
 /* menu (less 768px) end */
 
@@ -380,6 +404,11 @@ body {
 
 @media (min-width: 768px) {
   /* menu 768-992px*/
+  .container-fluid {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
   .navbar-light .navbar-toggler-icon {
     width: 61px;
     height: 32px;
