@@ -87,6 +87,7 @@ body {
   padding-top: 100px;
 }
 
+.navbar-collapse.collapsing .nav-item,
 .navbar-collapse.collapse.show .nav-item {
   margin: auto;
 }
