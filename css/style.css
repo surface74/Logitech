@@ -125,7 +125,7 @@ body {
   height: 100vh;
 }
 
-.menu-collapse__logo {
+.menu__logo-collapse {
   height: 65px;
   background-image: url("../img/Logo_Logitech_white.png");
   background-size: auto;
@@ -205,7 +205,7 @@ body {
   margin-bottom: 27px;
 }
 
-.wireless_icon-bluetooth {
+.wireless__icon-bluetooth {
   width: 18px;
   height: 34px;
 }
@@ -226,8 +226,8 @@ body {
   background-position-y: 70px;
 }
 
-.wireless_days-1,
-.wireless_days-2 {
+.wireless__days-1,
+.wireless__days-2 {
   font-weight: 900;
   font-size: 60px;
   line-height: 70px;
@@ -484,7 +484,7 @@ body {
     height: 32px;
   }
 
-  .menu-collapse__logo {
+  .menu__logo-collapse {
     height: 97px;
     background-image: url("../img/Logo_Logitech_white-tablet.png");
   }
@@ -545,7 +545,7 @@ body {
     padding-top: 80px;
   }
 
-  .wireless_icon-bluetooth {
+  .wireless__icon-bluetooth {
     width: 22px;
     height: 40px;
   }
@@ -562,8 +562,8 @@ body {
     margin-bottom: 76px;
   }
 
-  .wireless_days-1,
-  .wireless_days-2 {
+  .wireless__days-1,
+  .wireless__days-2 {
     font-size: 150px;
     line-height: 176px;
   }
@@ -882,7 +882,7 @@ body {
     margin-bottom: 0;
   }
 
-  .setting_img {
+  .settings__img {
     height: 576px;
     background-image: url(../img/function-desktop.png);
     background-position: center;
@@ -907,13 +907,13 @@ body {
     padding-bottom: 143px;
   }
 
-  .wireless_days-1 {
+  .wireless__days-1 {
     font-size: 300px;
     line-height: 352px;
     padding-left: 80px;
   }
 
-  .wireless_days-2 {
+  .wireless__days-2 {
     font-size: 96px;
     line-height: 112px;
     padding-top: 45px;
