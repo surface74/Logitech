@@ -68,9 +68,31 @@ body {
   height: 16px;
 }
 
+.navbar-collapse.collapsing,
+.navbar-collapse.collapse.show {
+  position: absolute;
+  background-color: darkgray;
+  width: 100%;
+  top: -25px;
+  height: 100vh;
+}
+
+.menu-collapse__logo {
+  height: 65px;
+  background-image: url("../img/Logo_Logitech_white.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.navbar-collapse.collapsing .navbar-nav,
+.navbar-collapse.collapse.show .navbar-nav {
+  padding-top: 50px;
+}
+
 .navbar-collapse.collapsing .nav-item,
 .navbar-collapse.collapse.show .nav-item {
-  margin: auto;
+  margin: 15px auto;
 }
 
 .navbar-nav .nav-link {
@@ -395,13 +417,23 @@ body {
   /* menu 768-992px*/
 
   .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
-    width: 86px;
-    height: 86px;
+    width: 61px;
+    height: 61px;
   }
 
   .navbar-toggler.collapsed .navbar-toggler-icon {
     width: 61px;
     height: 32px;
+  }
+
+  .menu-collapse__logo {
+    height: 97px;
+    background-image: url("../img/Logo_Logitech_white-tablet.png");
+  }
+
+  .navbar-collapse.collapsing .nav-item,
+  .navbar-collapse.collapse.show .nav-item {
+    margin: 30px auto;
   }
 
   .navbar-nav .nav-link {
