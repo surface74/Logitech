@@ -1,4 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"); */
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+
+  src: local("Roboto"),
+    url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff"),
+    url("../fonts/Roboto-Regular.ttf") format("ttf"),
+    url("../fonts/Roboto-Regular.eot") format("eot")
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+
+  src: local("Roboto"),
+    url("../fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto-Medium.woff") format("woff"),
+    url("../fonts/Roboto-Medium.ttf") format("ttf"),
+    url("../fonts/Roboto-Medium.eot") format("eot")
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+
+  src: local("Roboto"),
+    url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff"),
+    url("../fonts/Roboto-Bold.ttf") format("ttf"),
+    url("../fonts/Roboto-Bold.eot") format("eot")
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+
+  src: local("Roboto"),
+    url("../fonts/Roboto-Black.woff2") format("woff2"),
+    url("../fonts/Roboto-Black.woff") format("woff"),
+    url("../fonts/Roboto-Black.ttf") format("ttf"),
+    url("../fonts/Roboto-Black.eot") format("eot")
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -71,7 +119,7 @@ body {
 .navbar-collapse.collapsing,
 .navbar-collapse.collapse.show {
   position: absolute;
-  background-color: darkgray;
+  background-color: #2f3132;
   width: 100%;
   top: -25px;
   height: 100vh;
@@ -100,7 +148,17 @@ body {
   font-size: 20px;
   line-height: 23px;
 }
+/* menu font start */
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.55);
+}
 
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 1);
+  border-bottom: 2px solid #fff;
+}
+/* menu font end */
 /* menu (less 768px) end */
 
 .menu__logo {
@@ -436,6 +494,11 @@ body {
     margin: 30px auto;
   }
 
+  .navbar-light .navbar-nav .nav-link:focus,
+  .navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 4px solid #fff;
+  }
+
   .navbar-nav .nav-link {
     font-weight: 900;
     font-size: 40px;
@@ -688,11 +751,11 @@ body {
   }
 
   .navbar-nav .nav-link {
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
     text-align: center;
-    color: white;
+    color: #fff;
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -700,14 +763,12 @@ body {
     padding-left: 0;
   }
   /* menu font start */
-  .navbar-light .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.55);
-  }
 
   .navbar-light .navbar-nav .nav-link:focus,
   .navbar-light .navbar-nav .nav-link:hover {
-    color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid #fff;
   }
+
   /* menu font end */
   .nav-item {
     display: flex;
@@ -724,6 +785,10 @@ body {
     border-right: none;
   }
   /* menu (from 992px) end */
+
+  .top {
+    padding-top: 70px;
+  }
 }
 
 @media (min-width: 1024px) {
