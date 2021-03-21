@@ -5,11 +5,10 @@
   font-style: normal;
   font-weight: 400;
 
-  src: local("Roboto"),
-    url("../fonts/Roboto-Regular.woff2") format("woff2"),
+  src: local("Roboto"), url("../fonts/Roboto-Regular.woff2") format("woff2"),
     url("../fonts/Roboto-Regular.woff") format("woff"),
     url("../fonts/Roboto-Regular.ttf") format("ttf"),
-    url("../fonts/Roboto-Regular.eot") format("eot")
+    url("../fonts/Roboto-Regular.eot") format("eot");
 }
 
 @font-face {
@@ -17,11 +16,10 @@
   font-style: normal;
   font-weight: 500;
 
-  src: local("Roboto"),
-    url("../fonts/Roboto-Medium.woff2") format("woff2"),
+  src: local("Roboto"), url("../fonts/Roboto-Medium.woff2") format("woff2"),
     url("../fonts/Roboto-Medium.woff") format("woff"),
     url("../fonts/Roboto-Medium.ttf") format("ttf"),
-    url("../fonts/Roboto-Medium.eot") format("eot")
+    url("../fonts/Roboto-Medium.eot") format("eot");
 }
 
 @font-face {
@@ -29,11 +27,10 @@
   font-style: normal;
   font-weight: 700;
 
-  src: local("Roboto"),
-    url("../fonts/Roboto-Bold.woff2") format("woff2"),
+  src: local("Roboto"), url("../fonts/Roboto-Bold.woff2") format("woff2"),
     url("../fonts/Roboto-Bold.woff") format("woff"),
     url("../fonts/Roboto-Bold.ttf") format("ttf"),
-    url("../fonts/Roboto-Bold.eot") format("eot")
+    url("../fonts/Roboto-Bold.eot") format("eot");
 }
 
 @font-face {
@@ -41,11 +38,10 @@
   font-style: normal;
   font-weight: 900;
 
-  src: local("Roboto"),
-    url("../fonts/Roboto-Black.woff2") format("woff2"),
+  src: local("Roboto"), url("../fonts/Roboto-Black.woff2") format("woff2"),
     url("../fonts/Roboto-Black.woff") format("woff"),
     url("../fonts/Roboto-Black.ttf") format("ttf"),
-    url("../fonts/Roboto-Black.eot") format("eot")
+    url("../fonts/Roboto-Black.eot") format("eot");
 }
 
 body {
@@ -62,6 +58,7 @@ body {
   color: #2f3132;
   width: 85%;
   margin: 0 auto 20px;
+  overflow-wrap: break-word;
 }
 
 .text {
@@ -72,6 +69,7 @@ body {
   text-align: center;
   color: #2f3132;
   margin: 0;
+  overflow-wrap: break-word;
 }
 
 .menu {
@@ -147,6 +145,9 @@ body {
   font-weight: 900;
   font-size: 20px;
   line-height: 23px;
+  max-width: 200px;
+  min-width: 50px;
+  overflow-wrap: break-word;
 }
 /* menu font start */
 .navbar-light .navbar-nav .nav-link {
