@@ -8,7 +8,6 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <link rel="icon" href="img/favicon.png" type="image/png">
     <title>Logitech RX 3</title>
 </head>
@@ -18,9 +17,12 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <picture>
-                    <source srcset="img/Logo_Logitech_white-desktop.png" media="(min-width: 992px)">
-                    <source srcset="img/Logo_Logitech_dark-tablet.png" media="(min-width: 768px)">
-                    <img class="menu__logo" src="img/Logo_Logitech_dark.png" alt="Логотип Logitech">
+                    <source srcset="img/Logo_Logitech_white-desktop.png 1x, 
+                            img/Logo_Logitech_white-desktop@2x.png 2x" media="(min-width: 992px)">
+                    <source srcset="img/Logo_Logitech_dark-tablet.png 1x,
+                            img/Logo_Logitech_dark-tablet@2x.png 2x," media="(min-width: 768px)">
+                    <img class="menu__logo" src="img/Logo_Logitech_dark.png" srcset="img/Logo_Logitech_dark@2x.png 2x"
+                        alt="Логотип Logitech">
                 </picture>
 
                 <button class="navbar-toggler collapsed position-absolute top-0" type="button" data-bs-toggle="collapse"

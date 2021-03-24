@@ -123,9 +123,15 @@ body {
 .menu__logo-collapse {
   height: 65px;
   background-image: url("../img/Logo_Logitech_white.png");
-  background-size: auto;
+  background-size: 130px 38px;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .menu__logo-collapse {
+    background-image: url("../img/Logo_Logitech_white@2x.png");
+  }
 }
 
 .navbar-collapse.collapsing .navbar-nav,
@@ -482,6 +488,7 @@ body {
   .menu__logo-collapse {
     height: 97px;
     background-image: url("../img/Logo_Logitech_white-tablet.png");
+    background-size: 240px 72px;
   }
 
   .navbar-collapse.collapsing .nav-item,
@@ -724,7 +731,17 @@ body {
   }
 }
 
+@media all and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .menu__logo-collapse {
+    background-image: url("../img/Logo_Logitech_white-tablet@2x.png");
+  }
+}
+
 @media (min-width: 992px) {
+  .menu__logo {
+    width: 150px;
+  }
+
   .menu {
     padding-top: 0;
     padding-bottom: 0;
@@ -791,10 +808,6 @@ body {
     margin-bottom: 35px;
     font-size: 36px;
     line-height: 42px;
-  }
-
-  .menu__logo {
-    width: 150px;
   }
 
   .top {
