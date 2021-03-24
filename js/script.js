@@ -1,5 +1,6 @@
-'use strict';
+// 'use strict';
 
+const NAVBAR_EXPAND_LG = 992; //the Bootstrap threshold for expend the navbar 
 const navbarCollapse = document.querySelector('.navbar-collapse.collapse');
 const navbar = document.querySelector('.navbar.navbar-expand-lg');
 
@@ -10,9 +11,8 @@ const collapseNavbar = event => {
   }
 };
 
-//992 === .navbar-expand-lg
 const collapseOnWidth = event => {
-  if (navbar.clientWidth >= 992) {
+  if (navbar.clientWidth >= NAVBAR_EXPAND_LG) {
     new window.bootstrap.Collapse(navbarCollapse);
   }
 };
@@ -26,4 +26,3 @@ navbarCollapse.addEventListener('hide.bs.collapse', () => {
 });
 
 navbarCollapse.addEventListener('click', collapseNavbar);
-
